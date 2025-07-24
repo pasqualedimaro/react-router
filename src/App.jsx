@@ -3,6 +3,7 @@ import Homepage from "./pages/Homepage"
 import About from "./pages/About"
 import ProductList from "./pages/ProductList"
 import DefaultLayouts from "./layouts/DefaultLayouts"
+import ProductDetail from "./pages/ProductDetail"
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
            <Route path="/" element={<Homepage />}/>
            <Route path="/about" element={<About />}/>
            <Route path="/products" element={<ProductList />}/>
+           <Route path="/products/:id" element={<ProductDetail />}/>
           </Route>
         </Routes>
     </BrowserRouter>
