@@ -7,7 +7,7 @@ function Navbar(){
     <nav>
         <Link to="/">Home</Link>
         <Link to="/about">Chi siamo</Link>
-        <Link to="/product">Prodotti</Link>
+        <Link to="/products">Prodotti</Link>
     </nav>
     )
 }
