@@ -18,7 +18,7 @@ function App() {
           {/*configuro rotte*/}
           <Route path="/" element={<Homepage />}/>
           <Route path="/about" element={<About />}/>
-          <Route path="/products" element={<Homepage />}/>
+          <Route path="/products" element={<ProductList />}/>
         </Routes>
       </main>
       <Footer />
