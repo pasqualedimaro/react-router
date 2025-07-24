@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route} from "react-router-dom"
 import Homepage from "./pages/Homepage"
 import About from "./pages/About"
 import ProductList from "./pages/ProductList"
-import Layout from "./components/Layout"
+import DefaultLayouts from "./layouts/DefaultLayouts"
 
 function App() {
 
@@ -11,8 +11,8 @@ function App() {
     <BrowserRouter>
         <Routes>
           {/*configuro rotte*/}
-          <Route path="/" element={<Layout />}>
-           <Route index element={<Homepage />}/>
+          <Route Component={DefaultLayouts}>
+           <Route path="/" element={<Homepage />}/>
            <Route path="/about" element={<About />}/>
            <Route path="/products" element={<ProductList />}/>
           </Route>

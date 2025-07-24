@@ -1,10 +1,10 @@
 //importo
 import { Outlet } from "react-router-dom";
-import Header from "./Header";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
+import Header from "../components/Header";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
-function Layout(){
+function DefaultLayouts(){
     return(
         <>
         <Header />
@@ -18,4 +18,4 @@ function Layout(){
 }
 
 //esporto
-export default Layout;
+export default DefaultLayouts;
